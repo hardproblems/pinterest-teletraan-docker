@@ -1,4 +1,4 @@
-Dockerfile for dockerizing deploy-board django app
-Also included are files needed to deploy this as an AWS Elastic Beanstalk app
+Dockerfiles for teletraan components (deploy-board for now, then teletraan-service)
+Also included are files needed to deploy each as an AWS Elastic Beanstalk app
 	- Dockerrun.aws.json 
 	- .ebextensions/options.config #Supplies environment variables
