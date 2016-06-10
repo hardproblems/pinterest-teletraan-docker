@@ -1,4 +1,8 @@
 {
   "AWSEBDockerrunVersion": "1",
-  "Logging": "/tmp/deploy_board"
+  "Logging": "/tmp/deploy_board",
+   "Image": {
+   	"Name": "hardproblems/pinterest-teletraan-docker",
+  	"Update": "false"
+  }
 }
