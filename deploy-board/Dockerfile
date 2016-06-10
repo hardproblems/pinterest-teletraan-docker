@@ -24,9 +24,14 @@ RUN \
   cd ${INSTALL_DIR} && \
   pip install --no-cache-dir -r requirements.txt;
 
-EXPOSE 8888
 
 WORKDIR ${INSTALL_DIR}
+
+RUN \
+  # Modify run.sh to not run in background 
+  sed -i 's/access.log &/access.log/' run.sh
+
+EXPOSE 8888
 
 ENTRYPOINT ["/bin/bash", "run.sh"]
 CMD ["start"]
